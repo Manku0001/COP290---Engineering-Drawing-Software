@@ -1,0 +1,43 @@
+\hypertarget{classtrans}{}\section{trans Class Reference}
+\label{classtrans}\index{trans@{trans}}
+
+
+Collaboration diagram for trans\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{classtrans__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtrans_a4b4cf2c3c335d274fa6b95ed1c427fae}{transform} (vector$<$ \hyperlink{structco__ordinates__3D}{co\+\_\+ordinates\+\_\+3D} $>$ \&graph, vector$<$ string $>$ faces, vector$<$ string $>$ \&points)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{trans@{trans}!transform@{transform}}
+\index{transform@{transform}!trans@{trans}}
+\subsubsection[{\texorpdfstring{transform(vector$<$ co\+\_\+ordinates\+\_\+3\+D $>$ \&graph, vector$<$ string $>$ faces, vector$<$ string $>$ \&points)}{transform(vector< co_ordinates_3D > &graph, vector< string > faces, vector< string > &points)}}]{\setlength{\rightskip}{0pt plus 5cm}int trans\+::transform (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf co\+\_\+ordinates\+\_\+3D} $>$ \&}]{graph, }
+\item[{vector$<$ string $>$}]{faces, }
+\item[{vector$<$ string $>$ \&}]{points}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtrans_a4b4cf2c3c335d274fa6b95ed1c427fae}{}\label{classtrans_a4b4cf2c3c335d274fa6b95ed1c427fae}
+In this function the user selects the operation he/she wants to do by choosing various modes \+:
+\begin{DoxyEnumerate}
+\item Firstly, the user has to choose whether he wants orthographic views or view on a specified plane.
+\item If the user wants orthographic views, he/she will be prompted to input whether they want views without any rotation or with rotation.
+\item If the user wants the views without any rotation, then the co-\/ordinates stored in the graph are only translated and/or scaled to make them renderable.
+\item If the user wants the views with rotation, he/she is again prompted to input how they want the rotation to be done, i.\+e., whether the want rotation about xyz-\/axes or they want to rotate about a general axis.
+\item If the user wants to rotate about xyz-\/axes then the user is prompted to give the angles rotation and the co-\/ordinates stored in the graph are rotated, translated and scaled accordingly to make them renderable.
+\item If the user wants to rotate about a random axis then the user is prompted to give the direction vectors of the axis along with the angle by which they wants the figure to be rotated and then the co-\/ordinates stored in the graph are rotated, translated and scaled accordingly to make them renderable.
+\item If the user wants the view of the figure on a specified plane, the he/she is prompted to enter the normal vector of the plane on which he wants the view. The co-\/ordinates in the graph are then rotated, scaled and translated accordingly to make them renderable. 
+\end{DoxyEnumerate}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{transform_8cpp}{transform.\+cpp}\end{DoxyCompactItemize}

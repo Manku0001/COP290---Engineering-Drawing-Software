@@ -1,0 +1,35 @@
+\hypertarget{classconversion}{}\section{conversion Class Reference}
+\label{classconversion}\index{conversion@{conversion}}
+
+
+Collaboration diagram for conversion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classconversion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classconversion_a93f96b765225a746670f804db64416fc}{isometric} (vector$<$ vector$<$ \hyperlink{structco__ordinates__2D}{co\+\_\+ordinates\+\_\+2D} $>$ $>$ outgraphs2, vector$<$ string $>$ edges1, vector$<$ string $>$ edges2, vector$<$ string $>$ edges3)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{conversion@{conversion}!isometric@{isometric}}
+\index{isometric@{isometric}!conversion@{conversion}}
+\subsubsection[{\texorpdfstring{isometric(vector$<$ vector$<$ co\+\_\+ordinates\+\_\+2\+D $>$ $>$ outgraphs2, vector$<$ string $>$ edges1, vector$<$ string $>$ edges2, vector$<$ string $>$ edges3)}{isometric(vector< vector< co_ordinates_2D > > outgraphs2, vector< string > edges1, vector< string > edges2, vector< string > edges3)}}]{\setlength{\rightskip}{0pt plus 5cm}void conversion\+::isometric (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ {\bf co\+\_\+ordinates\+\_\+2D} $>$ $>$}]{outgraphs2, }
+\item[{vector$<$ string $>$}]{edges1, }
+\item[{vector$<$ string $>$}]{edges2, }
+\item[{vector$<$ string $>$}]{edges3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classconversion_a93f96b765225a746670f804db64416fc}{}\label{classconversion_a93f96b765225a746670f804db64416fc}
+It checks for any inconsistency in the data given ,i.\+e. incompatible views etc in the source graph(outgraphs2). The 3D graph is then generated using point to point correspondence given in the input. After the input given is verified for consistency and the 3\+D-\/graph is generated, the user is given a choice to see the isometric view or view along a general line of sight. If the user wants a general line of sight, he/she has to input the direction vectors of the line of view. After the viewing direction is decided, the co-\/ordinates stored in the graph are rotated and stored in a .txt file in a renderable format for QT and then the control is returned to main function. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{conversion_8cpp}{conversion.\+cpp}\end{DoxyCompactItemize}

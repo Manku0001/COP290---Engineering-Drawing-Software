@@ -1,0 +1,41 @@
+10
+a 2 2 0
+b 2 -2 0
+c -2 -2 0
+d -2 2 0
+e 0 0 2
+f 1 1 0
+g 1 -1 0
+h -1 -1 0
+i -1 1 0
+j 0 0 1
+
+16
+a b
+b c
+c d
+d a
+a e
+b e
+c e
+d e
+f g
+g h
+h i
+i f
+f j
+g j
+h j
+i j
+
+10
+aeb
+bec
+ced
+dea
+abcd
+fjg
+gjh
+hji
+ijf
+fghi

@@ -1,0 +1,38 @@
+5
+a 100 100
+b 100 -100
+c -100 100
+d -100 -100
+e 0 0
+
+8
+a b
+c d
+b d
+c a
+a e
+b e
+c e
+d e
+
+3
+e 0 200
+a&c 100 0
+b&d -100 0
+
+3
+a&c b&d
+a&c e
+b&d e
+
+3
+e 200 0
+a&b 0 100
+c&d 0 -100
+
+3
+a&b c&d
+a&b e
+c&d e
+
+abce

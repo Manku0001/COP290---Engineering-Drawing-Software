@@ -1,0 +1,33 @@
+\hypertarget{class__3D__file}{}\section{\+\_\+3\+D\+\_\+file Class Reference}
+\label{class__3D__file}\index{\+\_\+3\+D\+\_\+file@{\+\_\+3\+D\+\_\+file}}
+
+
+Collaboration diagram for \+\_\+3\+D\+\_\+file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class__3D__file__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class__3D__file_a7ccd75a68f51eeadb58b3666930160df}{get\+\_\+3\+D\+\_\+graph} (vector$<$ \hyperlink{structco__ordinates__3D}{co\+\_\+ordinates\+\_\+3D} $>$ \&c, vector$<$ string $>$ \&faces)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{\+\_\+3\+D\+\_\+file@{\+\_\+3\+D\+\_\+file}!get\+\_\+3\+D\+\_\+graph@{get\+\_\+3\+D\+\_\+graph}}
+\index{get\+\_\+3\+D\+\_\+graph@{get\+\_\+3\+D\+\_\+graph}!\+\_\+3\+D\+\_\+file@{\+\_\+3\+D\+\_\+file}}
+\subsubsection[{\texorpdfstring{get\+\_\+3\+D\+\_\+graph(vector$<$ co\+\_\+ordinates\+\_\+3\+D $>$ \&c, vector$<$ string $>$ \&faces)}{get_3D_graph(vector< co_ordinates_3D > &c, vector< string > &faces)}}]{\setlength{\rightskip}{0pt plus 5cm}string \+\_\+3\+D\+\_\+file\+::get\+\_\+3\+D\+\_\+graph (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf co\+\_\+ordinates\+\_\+3D} $>$ \&}]{c, }
+\item[{vector$<$ string $>$ \&}]{faces}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class__3D__file_a7ccd75a68f51eeadb58b3666930160df}{}\label{class__3D__file_a7ccd75a68f51eeadb58b3666930160df}
+Firstly, the user is prompted to input a file containing the 3\+D-\/figure and it is stored in a graph. As we are generating 3D view along with the orthographic views, we applied certain transformations, i.\+e. rotation, translation and scaling to get a renderable isometric view. Then the faces which will be visible from the isometric view are generated and stored in a vector(faces). The renderable isometric view generated is stored in a file so that the main function can render it. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{3D__file_8cpp}{3\+D\+\_\+file.\+cpp}\end{DoxyCompactItemize}
